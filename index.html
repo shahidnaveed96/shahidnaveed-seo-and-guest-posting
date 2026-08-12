@@ -3,20 +3,33 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Local & Digital Marketing • SEO & Growth | Shahid Naveed</title>
-  <meta name="description" content="I provide SEO, local search, and digital marketing services to help businesses rank higher, attract more customers, and grow revenue. My approach combines technical audits, content strategy, Google Maps optimization, and performance tracking to deliver measurable, sustainable results for small-to-medium enterprises." />
-  <meta name="keywords" content="local seo, seo, technical seo, google my business, digital marketing, ppc, google ads, content marketing, small business marketing" />
-  <!-- Open Graph & Twitter Card -->
-  <meta property="og:title" content="Local & Digital Marketing • SEO & Growth | Shahid Naveed" />
-  <meta property="og:description" content="I provide SEO, local search, and digital marketing services to help businesses rank higher, attract more customers, and grow revenue. My approach combines technical audits, content strategy, Google Maps optimization, and performance tracking to deliver measurable, sustainable results for small-to-medium enterprises." />
+  <title>AllNewJobsPakistan — Job listings, Careers & Hiring | Shahid Naveed</title>
+
+  <!-- Primary SEO -->
+  <meta name="description" content="AllNewJobsPakistan — Find the latest job listings, career opportunities, and hiring updates across Pakistan. Updated daily with local and remote jobs for freshers and experienced professionals." />
+  <meta name="keywords" content="jobs in Pakistan, latest jobs Pakistan, government jobs Pakistan, private jobs Pakistan, remote jobs Pakistan, AllNewJobsPakistan" />
+  <link rel="canonical" href="https://allnewjobspakistan.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="AllNewJobsPakistan" />
+  <meta property="og:title" content="AllNewJobsPakistan — Latest Job Listings & Career Opportunities" />
+  <meta property="og:description" content="Find the latest job listings, government and private jobs, and career resources across Pakistan. Daily updates for freshers and experienced professionals." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://example.com/og-image.jpg" />
+  <meta property="og:url" content="https://allnewjobspakistan.com/" />
+  <meta property="og:image" content="https://allnewjobspakistan.com/assets/og-image.jpg" />
+
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Local & Digital Marketing • SEO & Growth | Shahid Naveed" />
-  <meta name="twitter:description" content="I provide SEO, local search, and digital marketing services to help businesses rank higher, attract more customers, and grow revenue. My approach combines technical audits, content strategy, Google Maps optimization, and performance tracking to deliver measurable, sustainable results for small-to-medium enterprises." />
+  <meta name="twitter:site" content="@AllNewJobsPK" />
+  <meta name="twitter:title" content="AllNewJobsPakistan — Latest Job Listings & Career Opportunities" />
+  <meta name="twitter:description" content="Find the latest job listings, government and private jobs, and career resources across Pakistan. Daily updates for freshers and experienced professionals." />
+  <meta name="twitter:image" content="https://allnewjobspakistan.com/assets/og-image.jpg" />
+
+  <meta name="robots" content="index, follow" />
+
   <link rel="icon" href="/favicon.ico" />
+
   <style>
-    /* Simple responsive styling — replace with your CSS framework as needed */
     :root{--accent:#0b6efd;--muted:#6b7280;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial}
     body{margin:0;font-family:var(--font,Inter),sans-serif;color:#111;background:#fff;line-height:1.6}
     .container{max-width:980px;margin:0 auto;padding:28px}
@@ -32,13 +45,85 @@
     .contact{margin-top:18px}
     a{color:var(--accent);text-decoration:none}
   </style>
+
+  <!-- Structured Data: WebSite + Organization. Add JobPosting objects dynamically per job when available. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://allnewjobspakistan.com/#website",
+        "url": "https://allnewjobspakistan.com/",
+        "name": "AllNewJobsPakistan",
+        "description": "Job listings, career opportunities and hiring updates across Pakistan.",
+        "publisher": { "@id": "https://allnewjobspakistan.com/#organization" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://allnewjobspakistan.com/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://allnewjobspakistan.com/#organization",
+        "name": "AllNewJobsPakistan",
+        "url": "https://allnewjobspakistan.com/",
+        "logo": "https://allnewjobspakistan.com/assets/logo.png",
+        "sameAs": [
+          "https://www.facebook.com/AllNewJobsPakistan",
+          "https://twitter.com/AllNewJobsPK",
+          "https://www.linkedin.com/company/allnewjobspakistan"
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Example template for JobPosting JSON-LD to be generated per job. Populate these fields server-side when rendering job pages. -->
+  <!--
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "title": "Senior Software Engineer",
+    "description": "Short description of the role and responsibilities.",
+    "datePosted": "2026-08-12",
+    "validThrough": "2026-09-12T00:00",
+    "employmentType": "FULL_TIME",
+    "hiringOrganization": {
+      "@type": "Organization",
+      "name": "Example Company",
+      "sameAs": "https://example.com",
+      "logo": "https://example.com/logo.png"
+    },
+    "jobLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "",
+        "addressLocality": "Karachi",
+        "addressRegion": "Sindh",
+        "addressCountry": "PK"
+      }
+    },
+    "baseSalary": {
+      "@type": "MonetaryAmount",
+      "currency": "PKR",
+      "value": { "@type": "QuantitativeValue", "minValue": 50000, "maxValue": 150000, "unitText": "MONTH" }
+    }
+  }
+  </script>
+  -->
+
 </head>
 <body>
   <div class="container">
     <header>
-      <div class="brand">Shahid Naveed</div>
+      <div class="brand">AllNewJobsPakistan</div>
       <nav aria-label="Main navigation">
-        <a href="#services">Services</a> ·
+        <a href="#jobs">Jobs</a> ·
+        <a href="#companies">Companies</a> ·
         <a href="#about">About</a> ·
         <a href="#contact">Contact</a>
       </nav>
@@ -46,57 +131,45 @@
 
     <main>
       <section class="hero" id="home">
-        <h1>Grow locally. Rank globally. Marketing that converts.</h1>
-        <p class="lead">Practical, data-driven SEO, local search, and digital marketing to increase visibility, traffic, and qualified leads for small businesses and startups.</p>
-        <p><a class="cta" href="#contact">Book a free 30-minute marketing review</a></p>
+        <h1>Latest job listings across Pakistan</h1>
+        <p class="lead">Discover government, private, and remote job opportunities updated daily. Search by city, industry, or experience level.</p>
+        <p><a class="cta" href="#jobs">Search jobs</a></p>
       </section>
 
       <section id="services">
-        <h2>Services</h2>
+        <h2>What we do</h2>
         <div class="grid">
           <div class="card">
-            <h3>Local SEO</h3>
-            <p>Optimize Google Business Profile, local citations, and on-page signals to improve visibility in nearby searches and map pack placements.</p>
+            <h3>Daily job updates</h3>
+            <p>We aggregate and publish the newest job listings across Pakistan to keep job seekers informed.</p>
           </div>
 
           <div class="card">
-            <h3>Technical & On-Page SEO</h3>
-            <p>Fix crawlability, speed, schema, and content issues while crafting keyword-led pages that rank and convert.</p>
+            <h3>Job alerts</h3>
+            <p>Create alerts for specific cities and industries so you never miss relevant opportunities.</p>
           </div>
 
           <div class="card">
-            <h3>Content & Link Strategy</h3>
-            <p>Create targeted content and outreach plans that build authority and drive sustainable organic traffic.</p>
+            <h3>Employer listings</h3>
+            <p>Companies can post openings and connect with candidates across Pakistan.</p>
           </div>
 
-          <div class="card">
-            <h3>Paid & Social Advertising</h3>
-            <p>Set up high-performing Google Ads and social campaigns with conversion tracking and continuous optimization.</p>
-          </div>
-
-          <div class="card">
-            <h3>Analytics & Reporting</h3>
-            <p>Monthly insights and action items using real data — not just vanity metrics — to improve performance every month.</p>
-          </div>
         </div>
       </section>
 
       <section id="about">
         <h2>About</h2>
-        <p>I provide SEO, local search, and digital marketing services to help businesses rank higher, attract more customers, and grow revenue. My approach combines technical audits, content strategy, Google Maps optimization, and performance tracking to deliver measurable, sustainable results for small-to-medium enterprises.</p>
-        <p>My approach combines local-first optimization, conversion-focused content, and continuous measurement so you get transparent results — higher rankings, increased traffic, and more qualified leads. I handle strategy, implementation, and reporting so you can focus on serving your customers.</p>
+        <p>AllNewJobsPakistan helps job seekers find relevant opportunities across Pakistan. We focus on high-quality listings, clear application instructions, and fast updates so candidates can act quickly.</p>
       </section>
 
       <section id="contact" class="contact">
         <h2>Contact</h2>
-        <p>Ready to grow? Book a free 30-minute marketing review and get a prioritized action plan for improving local visibility and lead generation.</p>
-        <p>Email: <a href="mailto:hello@example.com">hello@example.com</a> · Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
-        <p><small>Or add your contact form here (e.g., Netlify Forms, Formspree, or your preferred backend).</small></p>
+        <p>If you'd like us to list your company's openings or collaborate, please contact us at <a href="mailto:contact@allnewjobspakistan.com">contact@allnewjobspakistan.com</a>.</p>
       </section>
     </main>
 
     <footer>
-      <small>© <span id="year"></span> Shahid Naveed — SEO • Local Search • Digital Marketing</small>
+      <small>© <span id="year"></span> AllNewJobsPakistan — Job listings across Pakistan</small>
     </footer>
   </div>
 
