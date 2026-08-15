@@ -1,180 +1,305 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>AllNewJobsPakistan — Job listings, Careers & Hiring | Shahid Naveed</title>
-
-  <!-- Primary SEO -->
-  <meta name="description" content="AllNewJobsPakistan — Find the latest job listings, career opportunities, and hiring updates across Pakistan. Updated daily with local and remote jobs for freshers and experienced professionals." />
-  <meta name="keywords" content="jobs in Pakistan, latest jobs Pakistan, government jobs Pakistan, private jobs Pakistan, remote jobs Pakistan, AllNewJobsPakistan" />
-  <link rel="canonical" href="https://allnewjobspakistan.com/" />
-
-  <!-- Open Graph -->
-  <meta property="og:site_name" content="AllNewJobsPakistan" />
-  <meta property="og:title" content="AllNewJobsPakistan — Latest Job Listings & Career Opportunities" />
-  <meta property="og:description" content="Find the latest job listings, government and private jobs, and career resources across Pakistan. Daily updates for freshers and experienced professionals." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://allnewjobspakistan.com/" />
-  <meta property="og:image" content="https://allnewjobspakistan.com/assets/og-image.jpg" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@AllNewJobsPK" />
-  <meta name="twitter:title" content="AllNewJobsPakistan — Latest Job Listings & Career Opportunities" />
-  <meta name="twitter:description" content="Find the latest job listings, government and private jobs, and career resources across Pakistan. Daily updates for freshers and experienced professionals." />
-  <meta name="twitter:image" content="https://allnewjobspakistan.com/assets/og-image.jpg" />
-
-  <meta name="robots" content="index, follow" />
-
-  <link rel="icon" href="/favicon.ico" />
-
-  <style>
-    :root{--accent:#0b6efd;--muted:#6b7280;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial}
-    body{margin:0;font-family:var(--font,Inter),sans-serif;color:#111;background:#fff;line-height:1.6}
-    .container{max-width:980px;margin:0 auto;padding:28px}
-    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
-    .brand{font-weight:700;font-size:18px}
-    .hero{padding:36px 0}
-    h1{font-size:28px;margin:0 0 8px}
-    p.lead{color:var(--muted);margin:0 0 18px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:18px 0}
-    .card{border:1px solid #e6e9ef;padding:18px;border-radius:8px;background:#fff}
-    .cta{background:var(--accent);color:#fff;padding:12px 18px;border-radius:8px;border:none;cursor:pointer}
-    footer{color:var(--muted);font-size:14px;margin-top:40px;text-align:center}
-    .contact{margin-top:18px}
-    a{color:var(--accent);text-decoration:none}
-  </style>
-
-  <!-- Structured Data: WebSite + Organization. Add JobPosting objects dynamically per job when available. -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://allnewjobspakistan.com/#website",
-        "url": "https://allnewjobspakistan.com/",
-        "name": "AllNewJobsPakistan",
-        "description": "Job listings, career opportunities and hiring updates across Pakistan.",
-        "publisher": { "@id": "https://allnewjobspakistan.com/#organization" },
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://allnewjobspakistan.com/search?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://allnewjobspakistan.com/#organization",
-        "name": "AllNewJobsPakistan",
-        "url": "https://allnewjobspakistan.com/",
-        "logo": "https://allnewjobspakistan.com/assets/logo.png",
-        "sameAs": [
-          "https://www.facebook.com/AllNewJobsPakistan",
-          "https://twitter.com/AllNewJobsPK",
-          "https://www.linkedin.com/company/allnewjobspakistan"
-        ]
-      }
-    ]
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shahid Naveed — SEO Specialist | On-Page, Off-Page & Technical SEO</title>
+<meta name="description" content="Shahid Naveed is an SEO Specialist based in Punjab, Pakistan, managing SEO for AllNewJobsPakistan.com, specializing in on-page, off-page, and technical SEO.">
+<style>
+  :root{
+    --paper:#FAF9F5;
+    --ink:#16181D;
+    --ink-soft:#4A4E58;
+    --line:#DEDBD1;
+    --link:#1A56E8;
+    --rank:#0B7A4B;
+    --amber:#C8862A;
+    --card:#FFFFFF;
   }
-  </script>
-
-  <!-- Example template for JobPosting JSON-LD to be generated per job. Populate these fields server-side when rendering job pages. -->
-  <!--
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "JobPosting",
-    "title": "Senior Software Engineer",
-    "description": "Short description of the role and responsibilities.",
-    "datePosted": "2026-08-12",
-    "validThrough": "2026-09-12T00:00",
-    "employmentType": "FULL_TIME",
-    "hiringOrganization": {
-      "@type": "Organization",
-      "name": "Example Company",
-      "sameAs": "https://example.com",
-      "logo": "https://example.com/logo.png"
-    },
-    "jobLocation": {
-      "@type": "Place",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "",
-        "addressLocality": "Karachi",
-        "addressRegion": "Sindh",
-        "addressCountry": "PK"
-      }
-    },
-    "baseSalary": {
-      "@type": "MonetaryAmount",
-      "currency": "PKR",
-      "value": { "@type": "QuantitativeValue", "minValue": 50000, "maxValue": 150000, "unitText": "MONTH" }
-    }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
   }
-  </script>
-  -->
+  .mono{
+    font-family: 'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
+  }
+  a{color:var(--link); text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .wrap{max-width:760px; margin:0 auto; padding:0 24px;}
 
+  /* NAV */
+  nav{
+    border-bottom:1px solid var(--line);
+    padding:18px 0;
+    position:sticky; top:0; background:rgba(250,249,245,0.92);
+    backdrop-filter: blur(6px);
+    z-index:10;
+  }
+  nav .wrap{display:flex; justify-content:space-between; align-items:center;}
+  .brand{font-weight:700; font-size:15px; letter-spacing:-0.01em;}
+  .navlinks{display:flex; gap:22px; font-size:13px;}
+  .navlinks a{color:var(--ink-soft); font-weight:500;}
+  .navlinks a:hover{color:var(--ink); text-decoration:none;}
+
+  /* HERO */
+  header.hero{padding:64px 0 40px;}
+  .eyebrow{
+    font-size:12px; text-transform:uppercase; letter-spacing:0.08em;
+    color:var(--rank); font-weight:700; margin-bottom:14px;
+  }
+  h1{
+    font-size:clamp(32px, 5vw, 44px);
+    font-weight:800;
+    letter-spacing:-0.02em;
+    line-height:1.1;
+    margin-bottom:10px;
+  }
+  .role{
+    font-size:17px;
+    color:var(--ink-soft);
+    margin-bottom:30px;
+    max-width:520px;
+  }
+
+  /* SERP CARD — signature element */
+  .serp{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:20px 22px;
+    max-width:600px;
+    box-shadow:0 1px 2px rgba(0,0,0,0.03);
+  }
+  .serp-bar{
+    display:flex; align-items:center; gap:8px;
+    font-size:12px; color:var(--ink-soft);
+    margin-bottom:14px; padding-bottom:12px;
+    border-bottom:1px solid var(--line);
+  }
+  .serp-bar .dot{width:8px; height:8px; border-radius:50%; background:var(--rank);}
+  .serp-url{
+    font-size:13px; color:var(--rank); margin-bottom:4px;
+  }
+  .serp-title{
+    font-size:19px; color:var(--link); font-weight:500;
+    margin-bottom:5px; line-height:1.3;
+  }
+  .serp-desc{font-size:14px; color:var(--ink-soft);}
+  .serp-tag{
+    display:inline-block; margin-top:14px;
+    font-size:11px; color:var(--amber); font-weight:700;
+    letter-spacing:0.04em; text-transform:uppercase;
+    border:1px solid var(--amber); border-radius:20px;
+    padding:3px 10px;
+  }
+
+  .contact-row{
+    display:flex; flex-wrap:wrap; gap:16px;
+    margin-top:28px; font-size:13px; color:var(--ink-soft);
+  }
+  .contact-row a{color:var(--ink); font-weight:600;}
+  .contact-row span{opacity:0.4;}
+
+  /* SECTIONS */
+  section{padding:44px 0; border-top:1px solid var(--line);}
+  .sec-label{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px; color:var(--rank); font-weight:600;
+    letter-spacing:0.03em; margin-bottom:18px;
+  }
+  h2{font-size:22px; font-weight:700; letter-spacing:-0.01em; margin-bottom:16px;}
+  p{color:var(--ink-soft); font-size:15px; max-width:640px;}
+
+  /* SKILLS */
+  .skills{display:flex; flex-wrap:wrap; gap:9px; margin-top:6px;}
+  .skill-pill{
+    font-size:13px; padding:6px 13px; border-radius:20px;
+    border:1px solid var(--line); background:var(--card);
+    color:var(--ink);
+  }
+
+  /* EXPERIENCE */
+  .job{margin-bottom:34px;}
+  .job:last-child{margin-bottom:0;}
+  .job-head{
+    display:flex; justify-content:space-between; align-items:baseline;
+    flex-wrap:wrap; gap:6px; margin-bottom:2px;
+  }
+  .job-title{font-size:16px; font-weight:700;}
+  .job-date{font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--ink-soft);}
+  .job-org{font-size:13.5px; color:var(--rank); font-weight:600; margin-bottom:10px;}
+  ul.job-list{list-style:none; margin-top:10px;}
+  ul.job-list li{
+    font-size:14.5px; color:var(--ink-soft);
+    padding-left:16px; position:relative; margin-bottom:8px;
+  }
+  ul.job-list li::before{
+    content:"—"; position:absolute; left:0; color:var(--rank);
+  }
+
+  /* EDU / CERTS */
+  .grid-two{display:grid; grid-template-columns:1fr 1fr; gap:36px;}
+  .cert-list li{font-size:14.5px; color:var(--ink-soft); margin-bottom:6px; padding-left:16px; position:relative;}
+  .cert-list li::before{content:"✓"; position:absolute; left:0; color:var(--rank); font-weight:700;}
+
+  /* FOOTER */
+  footer{padding:40px 0 60px; text-align:center;}
+  footer p{margin:0 auto; font-size:13px; color:var(--ink-soft);}
+  footer a{font-weight:600;}
+
+  @media (max-width:600px){
+    .grid-two{grid-template-columns:1fr;}
+    .navlinks{gap:14px;}
+    .serp{padding:16px;}
+  }
+</style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="brand">AllNewJobsPakistan</div>
-      <nav aria-label="Main navigation">
-        <a href="#jobs">Jobs</a> ·
-        <a href="#companies">Companies</a> ·
-        <a href="#about">About</a> ·
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
 
-    <main>
-      <section class="hero" id="home">
-        <h1>Latest job listings across Pakistan</h1>
-        <p class="lead">Discover government, private, and remote job opportunities updated daily. Search by city, industry, or experience level.</p>
-        <p><a class="cta" href="#jobs">Search jobs</a></p>
-      </section>
-
-      <section id="services">
-        <h2>What we do</h2>
-        <div class="grid">
-          <div class="card">
-            <h3>Daily job updates</h3>
-            <p>We aggregate and publish the newest job listings across Pakistan to keep job seekers informed.</p>
-          </div>
-
-          <div class="card">
-            <h3>Job alerts</h3>
-            <p>Create alerts for specific cities and industries so you never miss relevant opportunities.</p>
-          </div>
-
-          <div class="card">
-            <h3>Employer listings</h3>
-            <p>Companies can post openings and connect with candidates across Pakistan.</p>
-          </div>
-
-        </div>
-      </section>
-
-      <section id="about">
-        <h2>About</h2>
-        <p>AllNewJobsPakistan helps job seekers find relevant opportunities across Pakistan. We focus on high-quality listings, clear application instructions, and fast updates so candidates can act quickly.</p>
-      </section>
-
-      <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <p>If you'd like us to list your company's openings or collaborate, please contact us at <a href="mailto:contact@allnewjobspakistan.com">contact@allnewjobspakistan.com</a>.</p>
-      </section>
-    </main>
-
-    <footer>
-      <small>© <span id="year"></span> AllNewJobsPakistan — Job listings across Pakistan</small>
-    </footer>
+<nav>
+  <div class="wrap">
+    <div class="brand mono">shahidnaveed.seo</div>
+    <div class="navlinks">
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
   </div>
+</nav>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow mono">SEO Specialist · Punjab, Pakistan</div>
+    <h1>Shahid Naveed</h1>
+    <p class="role">On-page, off-page & technical SEO — currently managing full search strategy for a live job-listings portal reaching thousands of applicants across Pakistan.</p>
+
+    <div class="serp">
+      <div class="serp-bar">
+        <span class="dot"></span>
+        <span class="mono">google.com/search?q=seo+specialist+pakistan</span>
+      </div>
+      <div class="serp-url mono">allnewjobspakistan.com › about</div>
+      <div class="serp-title">Shahid Naveed | SEO Specialist — Manager, AllNewJobsPakistan.com</div>
+      <div class="serp-desc">Results-driven SEO specialist managing on-page, off-page &amp; technical SEO for a live job portal. Google Ads certified. Fluent in English, Urdu &amp; Punjabi.</div>
+      <span class="serp-tag">Position #1 · Verified</span>
+    </div>
+
+    <div class="contact-row">
+      <a href="mailto:shahid.nav096@gmail.com">shahid.nav096@gmail.com</a>
+      <span>·</span>
+      <a href="tel:+923140729096">+92 314 0729096</a>
+      <span>·</span>
+      <a href="https://linkedin.com/in/shahid-naveed-seo-and-guest-posting-services" target="_blank" rel="noopener">LinkedIn</a>
+      <span>·</span>
+      <a href="https://allnewjobspakistan.com" target="_blank" rel="noopener">AllNewJobsPakistan.com</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="sec-label">// summary</div>
+    <p style="font-size:15.5px; max-width:680px;">Results-driven SEO Specialist with hands-on experience in on-page, off-page, and technical SEO, including keyword research, website audits, backlink building, and metadata optimization. Currently manage full SEO operations for a live job listings portal, AllNewJobsPakistan.com, handling content strategy, link building, and metadata across the entire site. Google Ads certified with a strong foundation in digital marketing principles. Fluent in English, Urdu, and Punjabi, with a keen eye for detail and a commitment to measurable, sustainable search growth.</p>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-label">// work experience</div>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-title">SEO Specialist (Manager)</div>
+        <div class="job-date mono">2025 — Present</div>
+      </div>
+      <div class="job-org">AllNewJobsPakistan.com — Punjab, Pakistan</div>
+      <ul class="job-list">
+        <li>Manage end-to-end SEO strategy for a live job listings portal covering government, private sector, banking, NGO, military, and education roles.</li>
+        <li>Plan and execute on-page SEO across the site, including keyword-targeted meta titles, meta descriptions, and content optimization for individual job listing pages.</li>
+        <li>Drive off-page SEO and link-building campaigns through social bookmarking submissions, business/directory profile listings, and guest posting to grow referring domains.</li>
+        <li>Produce high-volume, keyword-optimized content including sector-specific articles and career-advice pieces (600–800 words) with strategic internal and backlink placement.</li>
+        <li>Manage technical and content SEO decisions independently, balancing search visibility growth with long-term site health and search-engine guideline compliance.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-title">SEO Intern</div>
+        <div class="job-date mono">2026</div>
+      </div>
+      <div class="job-org">Skills Era — Bahawalpur, Pakistan</div>
+      <ul class="job-list">
+        <li>Conducted comprehensive website audits to identify and resolve on-page and technical SEO issues, improving overall site health and crawlability.</li>
+        <li>Performed manual backlink building and off-page SEO outreach to strengthen domain authority and referral traffic.</li>
+        <li>Optimized meta titles, meta descriptions, and header tags across multiple pages to improve click-through rates and search relevance.</li>
+        <li>Applied technical SEO best practices, including indexability checks, site structure review, and mobile-friendliness assessment.</li>
+        <li>Assisted with local SEO efforts such as business listing consistency and location-based keyword targeting.</li>
+        <li>Supported keyword research and competitor analysis to inform on-page content optimization decisions.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-label">// core skills</div>
+    <div class="skills">
+      <span class="skill-pill">On-Page SEO</span>
+      <span class="skill-pill">Off-Page SEO</span>
+      <span class="skill-pill">Technical SEO</span>
+      <span class="skill-pill">Local SEO</span>
+      <span class="skill-pill">Keyword Research</span>
+      <span class="skill-pill">Website Audits</span>
+      <span class="skill-pill">Link Building &amp; Backlinking</span>
+      <span class="skill-pill">Meta Title &amp; Description Optimization</span>
+      <span class="skill-pill">Google Ads</span>
+      <span class="skill-pill">Content Strategy</span>
+      <span class="skill-pill">SEO Reporting &amp; Analytics</span>
+      <span class="skill-pill">Digital Marketing</span>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <div class="grid-two">
+      <div>
+        <div class="sec-label">// education</div>
+        <div class="job-title" style="margin-bottom:2px;">M.Sc.</div>
+        <div class="job-org">Government College University Faisalabad (GCUF) · 2014</div>
+      </div>
+      <div>
+        <div class="sec-label">// certifications</div>
+        <ul class="cert-list">
+          <li>Digital Marketing — Certified</li>
+          <li>SEO (Search Engine Optimization) — Certified</li>
+          <li>Google Ads — Certified</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="margin-top:36px;">
+      <div class="sec-label">// languages</div>
+      <div class="skills">
+        <span class="skill-pill">English</span>
+        <span class="skill-pill">Urdu</span>
+        <span class="skill-pill">Punjabi</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <p>Let's talk SEO — <a href="mailto:shahid.nav096@gmail.com">shahid.nav096@gmail.com</a> · <a href="https://linkedin.com/in/shahid-naveed-seo-and-guest-posting-services" target="_blank" rel="noopener">LinkedIn</a></p>
+  </div>
+</footer>
+
 </body>
 </html>
