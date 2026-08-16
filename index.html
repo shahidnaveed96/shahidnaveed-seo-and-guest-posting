@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Shahid Naveed — SEO & Guest Posting Services</title>
-  <meta name="description" content="I provide SEO, local search, and digital marketing services to help businesses rank higher, attract more customers, and grow revenue. Technical audits, content s[...]">
+  <meta name="description" content="I provide SEO, local search, and digital marketing services to help businesses rank higher, attract more customers, and grow revenue. Technical audits, content strategy, and guest posting." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -17,13 +17,28 @@
         <a href="#" class="logo">Shahid Naveed <span>SEO and Guest Posting Services</span></a>
         <p class="tag">SEO · Local Search · Guest Posting</p>
       </div>
-      <nav class="nav">
+
+      <!-- Desktop nav -->
+      <nav class="nav" aria-label="Primary">
         <a href="#services">Services</a>
         <a href="#process">Process</a>
         <a href="#testimonials">Testimonials</a>
         <a href="#contact" class="btn">Get a Quote</a>
       </nav>
+
+      <!-- Mobile menu toggle -->
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Toggle navigation">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
     </div>
+
+    <!-- Mobile nav (cloned links) -->
+    <nav id="mobileNav" class="mobile-nav" aria-label="Mobile" hidden>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact" class="btn primary">Get a Quote</a>
+    </nav>
   </header>
 
   <main>

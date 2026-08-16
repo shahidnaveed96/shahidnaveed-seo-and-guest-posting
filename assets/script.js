@@ -26,4 +26,34 @@ document.addEventListener('DOMContentLoaded', function(){
       form.reset();
     });
   }
+
+  // Mobile nav toggle
+  var menuToggle = document.getElementById('menuToggle');
+  var mobileNav = document.getElementById('mobileNav');
+  if(menuToggle && mobileNav){
+    function openMenu(){
+      menuToggle.classList.add('open');
+      menuToggle.setAttribute('aria-expanded','true');
+      mobileNav.hidden = false;
+      mobileNav.focus && mobileNav.focus();
+      document.documentElement.style.overflow = 'hidden'; // prevent background scroll
+    }
+    function closeMenu(){
+      menuToggle.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded','false');
+      mobileNav.hidden = true;
+      document.documentElement.style.overflow = '';
+    }
+    menuToggle.addEventListener('click', function(){
+      if(menuToggle.classList.contains('open')) closeMenu(); else openMenu();
+    });
+    // close when a link inside the mobile nav is clicked
+    mobileNav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A') closeMenu();
+    });
+    // close on escape
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape') closeMenu();
+    });
+  }
 });
